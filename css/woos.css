@@ -1,0 +1,408 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  width: 1600px;
+  height: 1400px;
+  margin: 0 auto;
+  background-color: rgb(98, 148, 5);
+}
+.theather {
+  width: 1400px;
+  height: 600px;
+  margin: 0 auto;
+}
+ul {
+  list-style: none;
+  background-color: #fff;
+}
+a {
+  text-decoration: none;
+}
+/* 상단메뉴 */
+header {
+  margin-bottom: 50px;
+}
+.logo {
+  color: #fff;
+  text-align: center;
+}
+.wholemenu {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+}
+.leftmenu {
+  float: left;
+  width: 500px;
+  height: 50px;
+  /* background-color: aquamarine; */
+}
+.leftmenu ul li {
+  float: left;
+  line-height: 50px;
+  margin: 0 10px;
+  font-size: 11px;
+  font-weight: 300;
+}
+.leftmenu ul li a {
+  color: #dfd9d9;
+}
+.rightmenu {
+  float: right;
+  width: 500px;
+  height: 50px;
+  /* background-color: #ef3e43; */
+}
+.rightmenu ul li {
+  float: right;
+  line-height: 50px;
+  margin: 0 10px;
+  font-size: 11px;
+  font-weight: 300;
+}
+.rightmenu ul li a {
+  color: #dfd9d9;
+}
+.midmenu {
+  width: 1000px;
+  height: 50px;
+  margin: 0 auto;
+  /* background-color: blueviolet; */
+  border-top: 2px solid #fff;
+}
+.midmenu ul {
+  width: 400px;
+  margin: 0 auto;
+}
+.midmenu ul li {
+  float: left;
+  text-align: center;
+  width: 60px;
+  height: 20px;
+  margin: 0 5px;
+  border-right: 2px solid #fff;
+  font-size: 15px;
+  font-weight: 600;
+}
+.midmenu ul li a {
+  color: #fff;
+}
+.midmenu ul li:last-child {
+  border-right: none;
+}
+/* 중앙내용 */
+.movie1 {
+  float: left;
+}
+.movie2 {
+  float: left;
+}
+.movie3 {
+  float: left;
+}
+.movie4 {
+  float: left;
+}
+/* 1번 */
+.ticket-link {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.ticket-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ticket-img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticket-rank {
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  bottom: 30px;
+  left: 25px;
+  z-index: 1;
+}
+.ticket-img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.5));
+}
+.ticket-info {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.ticket-info-list li {
+  margin-bottom: 5px;
+}
+.ticket-title {
+  display: block;
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  font-weight: 700;
+  /* height: 44px; */
+}
+.ticket-hall {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+.ticket-date {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+.ticket-sale {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e43;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+/* 2번 */
+.ticket-link2 {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.ticket-img2 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ticket-img2 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticket-rank2 {
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  bottom: 30px;
+  left: 25px;
+  z-index: 1;
+}
+.ticket-img2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.5));
+}
+.ticket-info2 {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.ticket-info-list2 li {
+  margin-bottom: 5px;
+}
+.ticket-title2 {
+  display: block;
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  font-weight: 700;
+  /* height: 44px; */
+}
+.ticket-hall2 {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+.ticket-date2 {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+.ticket-sale2 {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e43;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+/* 3번 */
+.ticket-link3 {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.ticket-img3 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ticket-img3 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticket-rank3 {
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  bottom: 30px;
+  left: 25px;
+  z-index: 1;
+}
+.ticket-img3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.5));
+}
+.ticket-info3 {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.ticket-info-list3 li {
+  margin-bottom: 5px;
+}
+.ticket-title3 {
+  display: block;
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  font-weight: 700;
+  /* height: 44px; */
+}
+.ticket-hall3 {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+.ticket-date3 {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+.ticket-sale3 {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e43;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+/* 4번 */
+.ticket-link4 {
+  display: block;
+  width: 300px;
+  height: 400px;
+  margin: 20px;
+}
+.ticket-img4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.ticket-img4 img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.ticket-rank4 {
+  position: absolute;
+  font-size: 70px;
+  color: #fff;
+  font-weight: 700;
+  bottom: 30px;
+  left: 25px;
+  z-index: 1;
+}
+.ticket-img4::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: blueviolet; */
+  background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.5));
+}
+.ticket-info4 {
+  padding: 20px 10px;
+  background-color: #fff;
+}
+.ticket-info-list4 li {
+  margin-bottom: 5px;
+}
+.ticket-title4 {
+  display: block;
+  color: #111;
+  font-size: 18px;
+  line-height: 22px;
+  height: 40px;
+  font-weight: 700;
+  /* height: 44px; */
+}
+.ticket-hall4 {
+  display: block;
+  font-size: 15px;
+  line-height: 15px;
+  color: #666;
+}
+.ticket-date4 {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  line-height: 17px;
+}
+.ticket-sale4 {
+  display: inline-block;
+  font-size: 11px;
+  border: 1px solid rgba(239, 62, 67, 0.3);
+  color: #ef3e43;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
